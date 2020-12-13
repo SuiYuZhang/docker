@@ -99,7 +99,7 @@ RUN apt-get update -y && \
     python2.7-dev \
     && rm -rf /var/lib/apt/lists/*
 
-RUN echo 'alias python=python27' >> ~/.bashrc
+RUN echo 'alias python=python2' >> ~/.bashrc
 
 RUN pip config --user set global.index http://mirrors.aliyun.com/pypi/simple
 RUN pip config --user set global.index-url http://mirrors.aliyun.com/pypi/simple
